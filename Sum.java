@@ -1,23 +1,24 @@
-import java.util.Scanner;
 
 
-public class Sum {
-public static void main(String[] args){
-	int number;
-	int sum1=0;
-	System.out.println("Enter the number");
-	Scanner s1=new Scanner(System.in);
-	number=s1.nextInt();
-	for(int i=0; i<=number;i++){
-		sum1+=i;
+	import java.util.*;
+	public class Sum {
+	public static void main(String ar[])throws Exception
+	{
+	Scanner sc=new Scanner(System.in);
+	int n;
+	n=sc.nextInt();
+	int a[]=new int[n];
+	for(int i=0;i<n;i++)
+	a[i]=sc.nextInt();
+	for(int i=0;i<n-1;i++)
+	{
+	for(int j=i+1;j<n;j++)
+	{
+	if(a[i]+a[j]==0)
+	System.out.println("elements are"+a[i]+"\t"+a[j]);
 	}
-	System.out.println("The value of sum is :" +sum1);
-	
-		
 	}
-	
-	
-	
-}
+	}
+	}
 
 
